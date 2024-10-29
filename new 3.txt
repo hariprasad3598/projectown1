@@ -1,0 +1,81 @@
+databases
+-------------------
+1 RDS
+2 AURORA
+3 DYNAMODB
+4 ELASTI CACHE
+5 DOCUMENT DB 
+
+how to choose  database ?
+by using vvv - 1 volume -- size of database ..tb/pb/exbytes
+               2 vareity -- it satured or non satured 
+			   3 velocity -- speed of the respon
+			   
+
+read & write 
+
+data : collection of imformation
+
+types of database
+1 structed -- it predefined  we need chang the structed
+sql ex  
+what is called schemea ? you calling structed that is schemea 
+
+2 semi structed --
+------------
+ that is data will be stoing json format--low tendency --dynamodb ,documentdb 
+nosql ex  
+  {
+  empid :1
+  empid name :raje
+  }
+  {
+  empid:2
+  empid name:rani
+  date:932/393
+  }
+  
+3 unstructed 
+---
+file ,videos ,
+s3 is ex
+
+
+ rds& aurora 
+ ------------------
+ rds is manage database service 
+
+why we are choosing rds to ec2 
+
+local host                                                 
+----------                                           -----------
+1 hardwoare you should care 
+2 os persion take 
+3 db everting manage the persion
+
+ec2 
+------
+1 hardwoare everting take aws 
+2 os  aws canot take aws
+3 we canot backup data 
+
+rds 
+----
+1 hardwoare everting take aws
+2 os aws support take rds
+3 we can backup data as for pointing time record 
+
+Amazon RDS (Relational Database Service) is a managed database service provided by Amazon Web Services (AWS). It simplifies the setup, operation, and scaling of a relational database in the cloud. With Amazon RDS, you can choose from several popular database engines, including:
+  Amazon Aurora (MySQL and PostgreSQL compatible)
+MySQL
+MariaDB
+PostgreSQL
+Oracle
+Microsoft SQL Server
+Key features of Amazon RDS include:
+
+Automatic backups and snapshots: RDS automatically backs up your database and allows you to restore it to a specific point in time.
+Scalability: You can easily scale your database's compute and storage resources with just a few clicks or API calls.
+High availability: With Multi-AZ deployments, RDS can automatically replicate data across multiple availability zones to ensure high availability.
+Security: RDS supports encryption at rest and in transit, as well as integration with AWS Identity and Access Management (IAM) for access control.
+Automated maintenance: RDS handles routine database tasks like software patching and backups.    
